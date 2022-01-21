@@ -1,6 +1,6 @@
 # Animal Shelter API
 
-#### An API for an animal shelter, giving info about name, species, age, breed and sex
+#### An API for an animal shelter, giving info about name, species, age, breed and sex.
 
 #### Created By: **Frank Proulx**
 
@@ -60,6 +60,21 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
 |||||
 
 *for endpoints with params, replace any `param` in the sample routes with your chosen param(s).
+
+## Responses
+
+A response for a single animal will have the following format:
+
+```
+{
+  "id" : integer,
+  "name" : string,
+  "species" : string
+  "age" : integer
+  "breed" : string
+  "sex" : string
+}
+```
 
 ## Known Bugs
 
