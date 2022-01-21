@@ -25,7 +25,7 @@
 
 ## Description
 
-_This project was created to show proficiency in Rails with Active Record for creating APIs. The application is for an API that allows users to retrieve information about animals in a shelter including name, species, age, breed and sex. The user can add/remove/edit animals in the database. This API has CORS enabled for all origins and all resources._
+_This project was created to show proficiency in Rails with Active Record for creating APIs. The application is for an API that allows users to retrieve information about animals in a shelter including name, species, age, breed and sex. The user can add/remove/edit animals in the database. This API has CORS enabled for all origins and all resources. The user can search for a random animal by adding /random to the end of a normal /animals get call (see below for specific route)._
 
 ## System Requirements
 
