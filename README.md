@@ -21,10 +21,11 @@
 * _Faker_
 * _Will Paginate_
 * _Factory Bot_
+* _rack-cors_
 
 ## Description
 
-_This project was created to show proficiency in Rails with Active Record for creating APIs. The application is for an API that allows users to retrieve information about animals in a shelter including name, species, age, breed and sex. The user can add/remove/edit animals in the database._
+_This project was created to show proficiency in Rails with Active Record for creating APIs. The application is for an API that allows users to retrieve information about animals in a shelter including name, species, age, breed and sex. The user can add/remove/edit animals in the database. This API has CORS enabled for all origins and all resources._
 
 ## System Requirements
 
