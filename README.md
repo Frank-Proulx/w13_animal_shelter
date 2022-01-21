@@ -86,4 +86,4 @@ _[MIT](https://opensource.org/licenses/MIT)_
 
 If you have any issues, questions, ideas or concerns, please reach out to me at my email and/or make a contribution to the code via GitHub.
 
-Copyright (c) _2022_ _Frank Proulx_
+Copyright (c) _2022_ _Frank Proulx_ 
