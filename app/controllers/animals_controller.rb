@@ -6,8 +6,16 @@ class AnimalsController < ApplicationController
 
   def index
     breed = params[:breed]
-    if breed
+    species = params[:species]
+    sex = params[:sex]
+    if species && sex
+      @animals = Animal.search_species(species).search_sex(sex)
+    elsif breed
       @animals = Animal.search_breed(breed)
+    elsif species
+      @animals = Animal.search_species(species)
+    elsif sex
+      @animals = Animal.search_sex(sex)
     elsif !params[:page]
       @animals = Animal.all
     else

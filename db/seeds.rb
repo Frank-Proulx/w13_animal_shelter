@@ -13,7 +13,7 @@ class Seed
   end
 
   def generate_animals
-    10.times do |i|
+    20.times do |i|
       animal = Animal.create!(
         name: Faker::Creature::Dog.name,
         species: "Dog",
@@ -23,7 +23,7 @@ class Seed
       )
       puts "Animal #{i}: Name is #{animal.name}, species is #{animal.species}, age is #{animal.age}, breed is #{animal.breed}, and sex is #{animal.sex}."
     end
-    10.times do |i|
+    20.times do |i|
       animal = Animal.create!(
         name: Faker::Creature::Cat.name,
         species: "Cat",

@@ -52,7 +52,7 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
 |Search By Animal Breed | GET    | `localhost:3000/animals?breed=param` | _breed_ |
 |See A Random Animal | GET    | `localhost:3000/animals/random` | |
 |Create An Animal | POST    | `localhost:3000/animals?name=param&species=param&age=param&breed=param&sex=param` | _name, species, age, breed, sex_ |
-|Update An Animal | PUT    | `localhost:3000/animals/:id?name=param&species=param&age=param&breed=param&sex=param` | _name, species, age, breed, sex_ |
+|Update An Animal (any or all parameters) | PUT    | `localhost:3000/animals/:id?name=param&species=param&age=param&breed=param&sex=param` | _name, species, age, breed, sex_ |
 |Delete An Animal | DELETE    |`localhost:3000/animals/:id`| |  
 |||||
 
