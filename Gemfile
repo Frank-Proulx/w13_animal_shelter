@@ -44,6 +44,7 @@ group :development do
 end
 
 group :test do
+  gem 'shoulda-matchers'
   gem 'factory_bot_rails'
 end
 
