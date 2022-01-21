@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "update an animal route", :type => :request do
   let!(:animals) { FactoryBot.create_list(:animal, 20)}
   before do
-    put "/animals/#{Animal.first.id}", params: { :name => 'Bojangles', :species => 'Dog', :age => 10, :breed => 'Dalmation', :sex => 'Male' }
+    put "/api/v1/animals/#{Animal.first.id}", params: { :name => 'Bojangles', :species => 'Dog', :age => 10, :breed => 'Dalmation', :sex => 'Male' }
   end
 
   it 'returns status code 200' do

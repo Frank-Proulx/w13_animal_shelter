@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "search for a species route", :type => :request do
   let!(:animals) { FactoryBot.create_list(:animal, 20)}
   
-  before { get "/animals?species=#{Animal.first.species}"}
+  before { get "/api/v1/animals?species=#{Animal.first.species}"}
 
   it 'returns animals with the searched species' do
     expect(JSON.parse(response.body).first['species']).to eq(Animal.first.species)

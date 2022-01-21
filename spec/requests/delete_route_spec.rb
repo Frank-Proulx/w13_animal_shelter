@@ -4,7 +4,7 @@ describe "delete an animal route", :type => :request do
   let!(:animals) { FactoryBot.create_list(:animal, 20)}
   before do
     @a_id = Animal.first.id
-    delete "/animals/#{@a_id}"
+    delete "/api/v1/animals/#{@a_id}"
   end
   it 'returns status code 200' do
     expect(response).to have_http_status(200)

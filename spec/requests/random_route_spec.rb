@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "get a random quotes route", :type => :request do
   let!(:animals) { FactoryBot.create_list(:animal, 20)}
 
-  before { get '/animals/random'}
+  before { get '/api/v1/animals/random'}
 
   it 'returns one random animal' do
     expect(JSON.parse(response.body).size).to eq(6) # this is confirming the correct number of parameters in an animal object
