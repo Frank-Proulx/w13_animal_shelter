@@ -11,26 +11,29 @@ class AnimalsController < ApplicationController
   end
 
   def create
-    @animal = Animal.create(animal_params)
-    json_response(@animal)
+    @animal = Animal.create!(animal_params)
+    json_response(@animal, :created)
   end
 
   def update
     @animal = Animal.find(params[:id])
-    @animal.update(animal_params)
+    if @animal.update!(animal_params)
+      render status: 200, json: {
+        message: "This animal has been updated successfully."
+      }
+    end
   end
 
   def destroy
     @animal = Animal.find(params[:id])
-    @animal.destroy
-  end
-
-  private
-  def json_response(object, status = :ok)
-    render json: object, status: status
+    if @animal.destroy
+      render status: 200, json: {
+      message: "This animal has been deleted successfully."
+      }
+    end
   end
 
   def animal_params
-    params.permit(:name, :type, :age, :breed, :sex)
+    params.permit(:name, :species, :age, :breed, :sex)
   end
 end
