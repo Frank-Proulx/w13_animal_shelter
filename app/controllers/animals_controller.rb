@@ -1,7 +1,11 @@
 class AnimalsController < ApplicationController
 
   def index
-    @animals = Animal.all
+    if !params[:page]
+      @animals = Animal.all
+    else
+      @animals = Animal.paginate(page: params[:page], per_page: 5)
+    end
     json_response(@animals)
   end
 
