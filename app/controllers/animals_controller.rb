@@ -5,7 +5,10 @@ class AnimalsController < ApplicationController
   end
 
   def index
-    if !params[:page]
+    breed = params[:breed]
+    if breed
+      @animals = Animal.search_breed(breed)
+    elsif !params[:page]
       @animals = Animal.all
     else
       @animals = Animal.paginate(page: params[:page], per_page: 5)

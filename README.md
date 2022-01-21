@@ -25,7 +25,7 @@
 
 ## Description
 
-_This project was created to show proficiency in Rails with Active Record for creating APIs. The application is for an API that allows users to retrieve information about animals in a shelter including name, species, age, breed and sex. The user can add/remove/edit animals in the database. This API has CORS enabled for all origins and all resources. The user can search for a random animal by adding /random to the end of a normal /animals get call (see below for specific route)._
+_This project was created to show proficiency in Rails with Active Record for creating APIs. The application is for an API that allows users to retrieve information about animals in a shelter including name, species, age, breed and sex. The user can add/remove/edit animals in the database. The user can get all animals with a standard get or if they'd like can add a page parameter to get paginated results. This API has CORS enabled for all origins and all resources. The user can search for a random animal by adding /random to the end of a normal /animals get call. The user can also search by breed, this was achieved with a scope and this search is case insensitive. All routes mentioned here detailed in the graph below._
 
 ## System Requirements
 
@@ -49,11 +49,14 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
 |See Animals | GET    | `localhost:3000/animals` | |
 |See Animals (Paginated) | GET    | `localhost:3000/animals?page=param` | _page_ |
 |See A Specific Animal | GET    | `localhost:3000/animals/:id` | |
-|Search By Animal Breed | GET    | `localhost:3000/animals?breed=param&page=param` | _breed, page_ |
+|Search By Animal Breed | GET    | `localhost:3000/animals?breed=param` | _breed_ |
 |See A Random Animal | GET    | `localhost:3000/animals/random` | |
 |Create An Animal | POST    | `localhost:3000/animals?name=param&species=param&age=param&breed=param&sex=param` | _name, species, age, breed, sex_ |
 |Update An Animal | PUT    | `localhost:3000/animals/:id?name=param&species=param&age=param&breed=param&sex=param` | _name, species, age, breed, sex_ |
 |Delete An Animal | DELETE    |`localhost:3000/animals/:id`| |  
+|||||
+
+*for endpoints with params, replace any `param` in the sample routes with your chosen param(s).
 
 ## Known Bugs
 
