@@ -11,7 +11,7 @@
 * _Gems_
 * _Bundler_
 * _RSpec_
-* _shoulda matchers_
+* _Shoulda Matchers_
 * _IRB_
 * _Pry_
 * _Postgres_
@@ -21,11 +21,19 @@
 * _Faker_
 * _Will Paginate_
 * _Factory Bot_
-* _rack-cors_
+* _Rack-cors_
 
 ## Description
 
-_This project was created to show proficiency in Rails with Active Record for creating APIs. The application is for an API that allows users to retrieve information about animals in a shelter including name, species, age, breed and sex. The user can add/remove/edit animals in the database. The user can get all animals with a standard get call or if they'd like can add a page parameter to get paginated results. This API has CORS enabled for all origins and all resources. The user can search for a random animal by adding /random to the end of a normal /animals get call, this was made with a custom route in the controller. The user can search by breed, species or sex individually, or also species and sex combined, these were achieved with scopes and these searches are case insensitive. All routes mentioned here detailed in the graph below. This API uses namespacing to create versioning._
+_This project was created to show proficiency in Rails with Active Record for creating APIs. The application is for an API that allows users to retrieve information about animals in a shelter including name, species, age, breed and sex. The user can add/remove/edit animals in the database._
+
+## Further Exploration Objectives
+
+* The user can get all animals with a standard get call or if they'd like can add a page parameter to get paginated results (used will_paginate gem for this).
+* The user can search for a random animal by adding /random to the end of a normal /animals get call, this was made with a custom route in the controller. 
+* The user can search by breed, species or sex individually, or also species and sex combined, these were achieved with custom scopes and these searches are case insensitive. All routes mentioned here detailed in the graph below. 
+* This API has CORS enabled for all origins and all resources (rack-cors gem enabled for this). 
+* This API uses namespacing of the controller to create versioning.
 
 ## System Requirements
 
@@ -41,6 +49,7 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
       `rake db:setup`
 * Enter `rspec` into the terminal to confirm passing of all tests.
 * Run `rails s` to start the Rails server.
+* Use an api platform (such as [Postman](https://www.postman.com/)) or integrate into a front end application using the routes listed below.
 
 ## Endpoints
 
