@@ -54,7 +54,7 @@ module Api::V1
     end
 
     def animal_params
-      params.permit(:name, :species, :age, :breed, :sex)
+      params.permit(:name, :species, :age, :breed, :sex, :url)
     end
   end
 end

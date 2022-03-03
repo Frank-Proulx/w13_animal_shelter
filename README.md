@@ -55,17 +55,17 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
 
 |Usage | METHOD       | URL       | Params |
 | :--------| :------------| :---------| :------|
-|See Animals | GET    | `localhost:3000/api/v1/animals` | |
-|See Animals (Paginated) | GET    | `localhost:3000/api/v1/animals?page=param` | _page_ |
-|See A Specific Animal | GET    | `localhost:3000/api/v1/animals/:id` | |
-|Search By Animal Breed | GET    | `localhost:3000/api/v1/animals?breed=param` | _breed_ |
-|Search By Animal Species | GET    | `localhost:3000/api/v1/animals?species=param` | _species_ |
-|Search By Animal Sex | GET    | `localhost:3000/api/v1/animals?sex=param` | _sex_ |
-|Search By Animal Species & Sex | GET    | `localhost:3000/api/v1/animals?species=param&sex=param` | _species, sex_ |
-|See A Random Animal | GET    | `localhost:3000/api/v1/animals/random` | |
-|Create An Animal | POST    | `localhost:3000/api/v1/animals?name=param&species=param&age=param&breed=param&sex=param` | _name, species, age, breed, sex_ |
-|Update An Animal (any or all parameters) | PUT    | `localhost:3000/api/v1/animals/:id?name=param&species=param&age=param&breed=param&sex=param` | _name, species, age, breed, sex_ |
-|Delete An Animal | DELETE    |`localhost:3000/api/v1/animals/:id`| |  
+|See Animals | GET    | `http://localhost:3000/api/v1/animals` | |
+|See Animals (Paginated) | GET    | `http://localhost:3000/api/v1/animals?page=param` | _page_ |
+|See A Specific Animal | GET    | `http://localhost:3000/api/v1/animals/:id` | |
+|Search By Animal Breed | GET    | `http://localhost:3000/api/v1/animals?breed=param` | _breed_ |
+|Search By Animal Species | GET    | `http://localhost:3000/api/v1/animals?species=param` | _species_ |
+|Search By Animal Sex | GET    | `http://localhost:3000/api/v1/animals?sex=param` | _sex_ |
+|Search By Animal Species & Sex | GET    | `http://localhost:3000/api/v1/animals?species=param&sex=param` | _species, sex_ |
+|See A Random Animal | GET    | `http://localhost:3000/api/v1/animals/random` | |
+|Create An Animal | POST    | `http://localhost:3000/api/v1/animals?name=param&species=param&age=param&breed=param&sex=param` | _name, species, age, breed, sex_ |
+|Update An Animal (any or all parameters) | PUT    | `http://localhost:3000/api/v1/animals/:id?name=param&species=param&age=param&breed=param&sex=param` | _name, species, age, breed, sex_ |
+|Delete An Animal | DELETE    |`http://localhost:3000/api/v1/animals/:id`| |  
 |||||
 
 *for endpoints with params, replace any `param` in the sample routes with your chosen param(s).
