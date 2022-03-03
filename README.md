@@ -1,6 +1,6 @@
 # Animal Shelter API
 
-#### An API for an animal shelter, giving info about name, species, age, breed and sex.
+#### An API for an animal shelter, giving info about name, species, age, breed and sex. I also created a React front end for this project which can be found [here](https://github.com/Frank-Proulx/animal-shelter-react)
 
 #### Created By: **Frank Proulx**
 
